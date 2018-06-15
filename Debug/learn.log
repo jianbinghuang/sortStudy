@@ -1,0 +1,26 @@
+﻿Build started 5/20/2018 6:47:46 AM.
+     1>Project "U:\learn\learn\learn\learn.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\apps\MVS12\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\learn.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\apps\MVS12\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt learn.cpp ZLib\adler32.cpp ZLib\compress.cpp ZLib\deflate.cpp ZLib\infblock.cpp ZLib\infcodes.cpp ZLib\inffast.cpp ZLib\inflate.cpp ZLib\inftrees.cpp ZLib\infutil.cpp ZLib\trees.cpp ZLib\uncompr.cpp ZLib\zutil.cpp
+         zutil.cpp
+         uncompr.cpp
+         trees.cpp
+         infutil.cpp
+         inftrees.cpp
+         inflate.cpp
+         inffast.cpp
+         infcodes.cpp
+         infblock.cpp
+         deflate.cpp
+         compress.cpp
+         adler32.cpp
+         learn.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\winnt.h(147): fatal error C1189: #error :  "No Target Architecture"
+         Generating Code...
+     1>Done Building Project "U:\learn\learn\learn\learn.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.67
