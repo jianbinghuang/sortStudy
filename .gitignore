@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Debug/zutil.obj
+/Debug/uncompr.obj
+/Debug/trees.obj
+/Debug/stdafx.obj
+/Debug/infutil.obj
+/Debug/inftrees.obj
+/Debug/inflate.obj
+/Debug/inffast.obj
+/Debug/infcodes.obj
+/Debug/infblock.obj
+/Debug/deflate.obj
+/Debug/compress.obj
+/Debug/adler32.obj
