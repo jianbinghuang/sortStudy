@@ -9,7 +9,7 @@
 
 using namespace std;
 
-#define SIZE 10000
+#define SIZE 100000
 
 struct SortElem
 {
@@ -22,7 +22,7 @@ struct SortElem
     bool operator==(const SortElem& rhs) const { return k==rhs.k; }
     int operator-(const SortElem& rhs) const { return k-rhs.k; }
     int k;
-    char value[4];
+    char value[400];
 };
 
 template<typename Callable> bool testSort(int32_t s, Callable f)
@@ -50,13 +50,13 @@ void testSort()
     t.start();
 	Demand(testSort(SIZE, [&](SortElem* a, int32_t n) { bubbleSort(a, n); }), "bubble sort failed.");
     cout<<"bubble sort:"<<t.elapsedTime()<<" seconds."<<endl;
-#endif
 
 	Demand(testSort(0, [&](SortElem* a, int32_t n) { selectionSort(a, n); }), "selection sort failed.");
 	Demand(testSort(1, [&](SortElem* a, int32_t n) { selectionSort(a, n); }), "selection sort failed.");
     t.start();
 	Demand(testSort(SIZE, [&](SortElem* a, int32_t n) { selectionSort(a, n); }), "selection sort failed.");
     cout<<"selection sort:"<<t.elapsedTime()<<" seconds."<<endl;
+#endif
 
 	Demand(testSort(0, [&](SortElem* a, int32_t n) { insertionSort(a, n); }), "insertion sort failed.");
 	Demand(testSort(1, [&](SortElem* a, int32_t n) { insertionSort(a, n); }), "insertion sort failed.");
