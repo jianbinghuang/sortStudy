@@ -9,7 +9,7 @@
 
 using namespace std;
 
-#define SIZE 10000000
+#define SIZE 100000
 
 struct SortElem
 {
