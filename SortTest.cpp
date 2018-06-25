@@ -68,13 +68,13 @@ void testSort()
     t.start();
 	Demand(testSort(SORTSIZE, [&](SortElem* a, int32_t n) { selectionSort(a, n); }), "selection sort failed.");
     cout<<"selection sort:"<<t.elapsedTime()<<" seconds."<<endl;
+#endif
 
 	Demand(testSort(0, [&](SortElem* a, int32_t n) { insertionSort(a, n); }), "insertion sort failed.");
 	Demand(testSort(1, [&](SortElem* a, int32_t n) { insertionSort(a, n); }), "insertion sort failed.");
     t.start();
 	Demand(testSort(SORTSIZE, [&](SortElem* a, int32_t n) { insertionSort(a, n); }), "insertion sort failed.");
     cout<<"insertion sort:"<<t.elapsedTime()<<" seconds."<<endl;
-#endif
 
 	Demand(testSort(0, [&](SortElem* a, int32_t n) { qs(a, n); }), "quick sort failed.");
 	Demand(testSort(1, [&](SortElem* a, int32_t n) { qs(a, n); }), "quick sort failed.");

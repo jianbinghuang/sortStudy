@@ -34,16 +34,6 @@ template <typename T> inline void merge(T* a, int32_t la, int32_t ra, T* b, int3
     }
 }
 
-// Perform insertion sort (in place)
-template <typename T> inline void insertionSort(T* a, int32_t l, int32_t r)
-{
-    for(int32_t i=l+1; i<=r; ++i){
-	    int32_t pos = i-1;
-	    while(pos>=l && a[pos] > a[i]) --pos;
-        rotate(a,pos+1,i);
-    }
-}
-
 /// @pre sortSpan < n
 template <typename T> inline void sortOneLevel(T* a, int32_t n, int32_t sortSpan, T* t)
 {
