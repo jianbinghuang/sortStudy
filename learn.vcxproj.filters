@@ -78,9 +78,6 @@
     <ClInclude Include="SelectionSort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="IntroSort.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="StdSort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
