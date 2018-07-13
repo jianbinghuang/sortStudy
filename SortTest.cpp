@@ -3,7 +3,6 @@
 #include "BubbleSort.h"
 #include "InsertionSort.h"
 #include "QuickSort.h"
-#include "IntroSort.h"
 #include "StdSort.h"
 #include "InsertionMergeSort.h"
 #include "HashMap.h"
@@ -11,7 +10,7 @@
 
 using namespace std;
 
-#define SORTSIZE 1000000
+#define SORTSIZE 10000
 
 struct SortElem
 {
@@ -81,12 +80,6 @@ void testSort()
     t.start();
 	Demand(testSort(SORTSIZE, [&](SortElem* a, int32_t n) { qs(a, n); }), "quick sort failed.");
     cout<<"Quicksort:"<<t.elapsedTime()<<" seconds."<<endl;
-
-	Demand(testSort(0, [&](SortElem* a, int32_t n) { introSort(a, n); }), "intro sort failed.");
-	Demand(testSort(1, [&](SortElem* a, int32_t n) { introSort(a, n); }), "intro sort failed.");
-    t.start();
-	Demand(testSort(SORTSIZE, [&](SortElem* a, int32_t n) { introSort(a, n); }), "intro sort failed.");
-    cout<<"Introsort:"<<t.elapsedTime()<<" seconds."<<endl;
 
 	Demand(testSort(0, [&](SortElem* a, int32_t n) { stdSort(a, n); }), "std sort failed.");
 	Demand(testSort(1, [&](SortElem* a, int32_t n) { stdSort(a, n); }), "std sort failed.");
