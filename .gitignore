@@ -45,6 +45,7 @@
 /Release/learn.tlog/CL.write.1.tlog
 /Release/learn.tlog/CL.read.1.tlog
 /Release/learn.tlog/CL.command.1.tlog
+x64/
 *.ipch
 *.suo
 *.opendb
