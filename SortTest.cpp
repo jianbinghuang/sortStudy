@@ -9,7 +9,7 @@
 #include "Timer.h"
 
 using namespace std;
-
+ 
 #define SORTSIZE 10000
 
 struct SortElem
